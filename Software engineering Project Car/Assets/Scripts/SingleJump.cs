@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class SingleJump : MonoBehaviour {
     public int test = 0;
-
-
-
+    public GameObject truck;
     void OnTriggerEnter(Collider col)
     {
 
         if (col.GetComponent<TriggerTEST>() != null)
         {
-            GetComponent<MoveVehicle>().landed = true;
+            truck.GetComponent<MoveVehicle>().landed = true;
+            /*
+            MoveVehicle mV = col.GetComponent<MoveVehicle>();
+            mV.landed = true;
+            */
         }
     }
 }
