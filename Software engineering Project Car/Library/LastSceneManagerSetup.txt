@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/vehicle.unity
+- path: Assets/HoverCar/HoverTestScene.unity
   isLoaded: 1
   isActive: 1
